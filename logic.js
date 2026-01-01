@@ -14,7 +14,7 @@ async function getdata(){
     try {
         
         user_city=entered_city;
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=d6bc8e8ceb6a4bac98d183846253112&q=${user_city}&days=1&aqi=yes&alerts=no`)
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d6bc8e8ceb6a4bac98d183846253112&q=${user_city}&days=1&aqi=yes&alerts=no`)
 
         data = await response.json()
         
@@ -86,5 +86,6 @@ button.addEventListener('click',()=>{
 
 
 //http://api.weatherapi.com/v1/forecast.json?key=d6bc8e8ceb6a4bac98d183846253112&q=Gwalior&days=1&aqi=no&alerts=no
+
 
 // d6bc8e8ceb6a4bac98d183846253112
